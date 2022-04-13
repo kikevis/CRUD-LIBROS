@@ -9,3 +9,7 @@ def inicio(request):
 #view nosotros
 def nosotros (request):
     return render(request, 'paginas/nosotros.html')
+
+#view libros
+def libros (request):
+    return render(request, 'libros/index.html')
