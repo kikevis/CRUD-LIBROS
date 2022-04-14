@@ -10,6 +10,14 @@ def inicio(request):
 def nosotros (request):
     return render(request, 'paginas/nosotros.html')
 
-#view libros
+#view CRUD libros
 def libros (request):
     return render(request, 'libros/index.html')
+
+#view crear libros
+def crear (request):
+    return render(request, 'libros/crear.html')
+
+#view editar libros
+def editar (request):
+    return render(request, 'libros/editar.html')

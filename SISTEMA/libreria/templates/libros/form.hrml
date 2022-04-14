@@ -1,7 +1,0 @@
-{% extends "base.html" %}
-{% block titulo %} Formulario {% endblock %}
-{% block contenido %}
-
-Formulario
-
-{% endblock %}
