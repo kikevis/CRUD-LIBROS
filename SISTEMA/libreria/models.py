@@ -6,11 +6,10 @@ class Libro(models.Model):
     imagen = models.ImageField(upload_to='imagenes/', null=True, verbose_name='Imagen')
     descripcion = models.TextField(null=True, verbose_name='Descripción')
 
-def __str__(self):
-    fila = "Titulo: " + self.titulo + " | " + "Descripción: " + self.descripcion
-    return fila
+    def __str__(self):
+        fila = "Titulo: " + self.titulo + " | " + "Descripción: " + self.descripcion
+        return fila
 
-#Borrar libro con imagen de la carpeta
-def delete(self, using=None, keep_parents=False):
-    self.imagen.storage.delete(self.imagen.name)
-    super().delete()
+    def delete(self, using=None, keep_parents=False):
+        self.imagen.storage.delete(self.imagen.name)
+        super().delete()
