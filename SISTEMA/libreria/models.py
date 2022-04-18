@@ -9,3 +9,8 @@ class Libro(models.Model):
 def __str__(self):
     fila = "Titulo: " + self.titulo + " | " + "Descripción: " + self.descripcion
     return fila
+
+#Borrar libro con imagen de la carpeta
+def delete(self, using=None, keep_parents=False):
+    self.imagen.storage.delete(self.imagen.name)
+    super().delete()
