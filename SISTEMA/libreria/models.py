@@ -5,3 +5,7 @@ class Libro(models.Model):
     titulo = models.CharField(max_length=100, verbose_name='Titulo')
     imagen = models.ImageField(upload_to='imagenes/', null=True, verbose_name='Imagen')
     descripcion = models.TextField(null=True, verbose_name='Descripción')
+
+def __str__(self):
+    fila = "Titulo: " + self.titulo + " | " + "Descripción: " + self.descripcion
+    return fila
