@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .models import Libro
 # Create your views here.
 
 #view inicio
@@ -12,7 +13,8 @@ def nosotros (request):
 
 #view CRUD libros
 def libros (request):
-    return render(request, 'libros/index.html')
+    libros = Libro.objects.all()
+    return render(request, 'libros/index.html', {'libros': libros})
 
 #view crear libros
 def crear (request):
