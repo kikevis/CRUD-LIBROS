@@ -4,4 +4,4 @@ from .models import Libro
 class LibroForm(forms.ModelForm):
     class Meta:
         model = Libro
-        field = '__all__'
+        fields = '__all__'
