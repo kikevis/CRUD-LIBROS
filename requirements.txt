@@ -1,0 +1,12 @@
+asgiref==3.5.0
+Django==3.2.8
+django-automatic-crud==1.2.0
+djangorestframework==3.13.1
+et-xmlfile==1.1.0
+filter==0.0.0.20200724
+Markdown==3.3.6
+openpyxl==3.0.7
+Pillow==9.1.0
+PyMySQL==1.0.2
+pytz==2022.1
+sqlparse==0.4.2
